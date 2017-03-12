@@ -2,6 +2,7 @@ package com.dtspark.scala.basics
 
 
 /**
+  * https://github.com/scala/scala/tree/v2.10.4
   *
   * object 作为Scala中的一个关键字，相当于Java中的 public static class这样的一个修饰符，
   * 也就是说object中的成员都是静态的，所以我们在这个例子中的main方法都是静态的，
