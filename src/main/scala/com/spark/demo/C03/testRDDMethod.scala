@@ -11,8 +11,8 @@ object testRDDMethod {
 
     val sc = new SparkContext(conf) //创建环境变量实例
 
-    val arr = sc.parallelize(Array(1, 2, 3, 4, 5, 6)) //输入数组数据集
+    val arr = sc.parallelize(Array(1, 2, 3, 4, 5, 6, 100)) //输入数组数据集
     val result = arr.aggregate(0)(math.max(_, _), _ + _) //使用aggregate方法
-    println(result) //打印结果
+    println("打印结果:" + result) //打印结果
   }
 }
