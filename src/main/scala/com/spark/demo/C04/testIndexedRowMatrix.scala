@@ -1,8 +1,8 @@
 package com.spark.demo.C04
 
 import org.apache.spark._
-import org.apache.spark.mllib.linalg.distributed.{IndexedRow, RowMatrix, IndexedRowMatrix}
-import org.apache.spark.mllib.linalg.{Vector, Vectors}
+import org.apache.spark.mllib.linalg.Vectors
+import org.apache.spark.mllib.linalg.distributed.{IndexedRow, IndexedRowMatrix}
 
 object testIndexedRowMatrix {
   def main(args: Array[String]) {
@@ -10,7 +10,7 @@ object testIndexedRowMatrix {
       .setMaster("local") //设置本地化处理
       .setAppName("testIndexedRowMatrix") //设定名称
     val sc = new SparkContext(conf) //创建环境变量实例
-    val rdd = sc.textFile("c://a.txt") //创建RDD文件路径
+    val rdd = sc.textFile("d://b.txt") //创建RDD文件路径
       .map(_.split(' ') //按“ ”分割
       .map(_.toDouble)) //转成Double类型
       .map(line => Vectors.dense(line)) //转化成向量存储

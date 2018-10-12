@@ -3,3 +3,6 @@
 *.class
 *.log
 
+/DTSparkScala.iml
+.idea/
+target/generated-sources/
