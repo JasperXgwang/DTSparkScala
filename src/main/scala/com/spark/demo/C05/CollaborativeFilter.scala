@@ -20,4 +20,3 @@ object CollaborativeFilter {
     rs.foreach(println) //打印结果
   }
 }
-`
